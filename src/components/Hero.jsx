@@ -12,8 +12,9 @@ const Hero = () => {
       id="home"
       className={`flex md:flex-row flex-col ${styles.paddingY}`}
     >
+      {/* Hero content */}
       <div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        className={`relative flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
         <div className="flex fle-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-5 sm:mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
@@ -42,7 +43,11 @@ const Hero = () => {
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.
         </p>
+        <div className="absolute w-[45%] h-[45%] z-1 left-0 bottom-40 white__gradient rounded-full" />
       </div>
+      {/* /Hero content */}
+
+      {/* Hero image */}
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
@@ -57,9 +62,13 @@ const Hero = () => {
         <div className="absolute w-[50%] h-[50%] z-0 right-20 bottom-20 blue__gradient" />
         {/* /Gradient background */}
       </div>
+      {/* /Hero image */}
+
+      {/* Hero button mobile */}
       <div className={`ss:hidden ${styles.flexCenter}`}>
         <GetStarted />
       </div>
+      {/* /Hero button mobile */}
     </section>
   );
 };
