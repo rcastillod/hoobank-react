@@ -15,16 +15,18 @@ const Hero = () => {
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
-        <div className="flex fle-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+        <div className="flex fle-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-5 sm:mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} ml-2 uppercase discount__text`}>
+          <p
+            className={`${styles.paragraph} ml-2 uppercase hero__discount-text`}
+          >
             <span className="text-white">20% </span>
             discount for <span className="text-white">1 month </span>
             account
           </p>
         </div>
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] ss:leading-[100px] leading-[75px] text-[52px] text-white">
+          <h1 className="flex-1 font-poppins font-semibold text-white hero__title">
             The Next <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Generation</span>
           </h1>
@@ -32,7 +34,7 @@ const Hero = () => {
             <GetStarted />
           </div>
         </div>
-        <h1 className="font-poppins font-semibold ss:text-[72px] ss:leading-[100px] leading-[75px] text-[52px] text-white">
+        <h1 className="font-poppins font-semibold text-white hero__title">
           Payment Method.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>

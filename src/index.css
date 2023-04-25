@@ -153,6 +153,11 @@
 /* -------------------------------------------------------------------------- */
 
 /* Hero */
-.discount__text {
+.hero__discount-text {
   font-size: clamp(0.8rem, 3vw, 1.125rem);
+}
+
+.hero__title {
+  font-size: clamp(2.825rem, 7vw, 4.5rem);
+  line-height: clamp(3.15rem, 7vw, 6.25rem);
 }
