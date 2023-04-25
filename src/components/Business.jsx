@@ -8,9 +8,9 @@ import Button from "./Button";
 import { features } from "../constants";
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] feature-card`}>
+  <div className={`flex flex-col sm:flex-row p-6 rounded-[20px] feature-card`}>
     <div
-      className={`w-[64px] h-[64px] rounded-full bg-dimBlue ${styles.flexCenter}`}
+      className={`w-[64px] h-[64px] mb-3 sm:mb-0 rounded-full bg-dimBlue ${styles.flexCenter}`}
     >
       <img src={icon} alt="icon" className="w-[50%] h-[50%] object-contain" />
     </div>
@@ -25,7 +25,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Business = () => {
   return (
-    <section id="features" className={`${layout.section}`}>
+    <section id="features" className={`${layout.section} mt-20 sm:mt-0`}>
       <div className={`${layout.sectionInfo}`}>
         <h2 className={`${styles.heading2} heading2`}>
           You do the business, <br className="sm:block hidden" /> we’ll handle
