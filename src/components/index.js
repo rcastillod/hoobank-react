@@ -10,7 +10,7 @@ import CTA from './CTA'
 import Footer from './Footer'
 import Button from './Button'
 import FeedbackCard from './FeedbackCard'
-import GetStarted from './GetStarted'
+import GetStarted from './GetStarted/GetStarted'
 
 export {
   NavBar,

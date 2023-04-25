@@ -4,7 +4,7 @@ import React from "react";
 import styles from "../style";
 // Assets
 import { discount, robot } from "../assets";
-import GetStarted from "./GetStarted";
+import GetStarted from "./GetStarted/GetStarted";
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
     >
       {/* Hero content */}
       <div
-        className={`relative flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        className={`relative flex-1 sm:flex-[1.2_1_0%] ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
         <div className="flex fle-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-5 sm:mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />

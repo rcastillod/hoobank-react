@@ -1,0 +1,40 @@
+.getstarted__button:is(:hover, :focus) .getstarted__button-inner {
+  background-color: transparent;
+}
+
+.getstarted__button:is(:hover, :focus) .getstarted__button-inner_text {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.getstarted__button:is(:hover, :focus)
+  .getstarted__button-inner_icon
+  img:first-child {
+  transform: translate(18px, -15px);
+}
+
+.getstarted__button:is(:hover, :focus)
+  .getstarted__button-inner_icon
+  img:nth-child(2) {
+  transform: none;
+}
+
+.getstarted__button-inner {
+  transition: background 300ms ease-in-out;
+}
+
+.getstarted__button-inner_icon img {
+  transition: transform 300ms cubic-bezier(0.25, 0.75, 0.5, 1.25);
+}
+
+.getstarted__button-inner_icon img:nth-child(2) {
+  transform: translate(-18px, 15px);
+}
