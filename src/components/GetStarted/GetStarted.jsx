@@ -8,7 +8,7 @@ const GetStarted = () => {
   return (
     <a
       href="#"
-      className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] getstarted__button`}
+      className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] transition-all duration-300 getstarted__button`}
     >
       <div
         className={`${styles.flexCenter} flex-col bg-primary w-full h-full rounded-full getstarted__button-inner`}

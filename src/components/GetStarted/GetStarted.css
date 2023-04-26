@@ -1,3 +1,9 @@
+.getstarted__button:is(:hover, :focus) {
+  box-shadow: -10px -15px 60px -3px rgb(252 103 250 / 20%),
+    0px 0px 60px -3px rgb(255 255 255 / 20%),
+    10px 15px 60px -3px rgb(33 77 118 / 20%);
+}
+
 .getstarted__button:is(:hover, :focus) .getstarted__button-inner {
   background-color: transparent;
 }
